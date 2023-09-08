@@ -1,9 +1,16 @@
 .app{
   display: flex;
   flex-direction: row;
-width: 100vw;
+width: 98vw;
 height: 180vh;
+
 }
 *{
   margin: 0px
+}
+@media only screen and (max-width: 768px)  { 
+  .app{
+    flex-direction: column;
+   
+  }
 }

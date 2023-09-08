@@ -99,3 +99,30 @@ box-shadow: .1px .1px 50px #939da5;
     font-size: 2vh;
     margin-right: -5%
 }
+
+@media only screen and (max-width: 768px)  { 
+ .event-card{
+    width: 100%;
+}
+.event-info{
+    margin-left: 1%;
+}
+    .event-title{
+        font-size: 1.2vh;
+    }
+    .event-location{
+        font-size: 1vh;
+    }
+    .event-description{
+        font-size:1.5vh
+    }
+    .event-by{
+        font-size: 1vh;
+    }
+    .ppl{
+    font-size: 1.5vh;    
+    }
+    .interested p{
+    font-size: 1vh;    
+    }
+  }

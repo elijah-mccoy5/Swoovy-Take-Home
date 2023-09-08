@@ -4,21 +4,96 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 150vh;
     margin-right: auto;
     margin-left: auto;
     color: #0a3f65;
     background-color: white;
+    box-shadow: .1px .1px 50px #939da5;
+    padding-bottom: 5%;
 }
 .filters{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 80%;
     padding-top: 5%;
+    height: 100%;
 }
 .filter-search{
     width: 100%;
     height: 3vh;
+    margin-bottom: 5%;
     background-color: white;
     border: 1px solid #939da5;
+    font-size: 2vh;
+    padding: 2%;
+    color: #0a3f65;
+}
+.radios{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 75%;
+    font-size: 1.5vh;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #3c3c3c
+}
+.group-container{
+    height: 20vh;
+}
+
+.radios p{
+    display: flex;
+    flex: 1;
+    margin-left: 3%
+}
+
+.match-title{
+    font-size: 1.5vh;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-weight: 600;
+}
+.filters-title{
+    font-size: 1.6vh;
+    font-weight: 800;
+}
+.filter-clear{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+.clear{
+    color: #59bfa7;
+    font-weight: 800;
+    cursor: pointer;
+}
+.checkbox{
+    color: #0a3f65;
+    font-size: 3vh;
+}
+
+@media only screen and (max-width: 768px)  { 
+ .filter-container{
+    height: 150vh;
+ }
+.radios{
+    font-size: 1vh;
+}
+.filter-clear{
+    font-size: 1vh;
+}
+.filter-search{
+    font-size: 1vh;
+}
+.filters-title{
+    font-size: 1.2vh;
+}
 }
