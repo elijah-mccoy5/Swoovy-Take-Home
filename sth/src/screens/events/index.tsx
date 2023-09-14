@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { eventContext } from "../../App";
 import Event from "../../components/event";
 import "./index.css";
 import {
@@ -11,9 +9,9 @@ import {
   MailOutlined,
 } from "@ant-design/icons";
 import Filter from "../../components/filter";
+import events from "../../dummy.json";
 
 const Events = () => {
-  const events = useContext(eventContext);
   return (
     <div className="events">
       <div className="header">
@@ -42,9 +40,10 @@ const Events = () => {
           <Filter />
         </div>
         <div className="main-right">
-          {events.map((event) => (
+          {events.map((event, index) => (
             <Event
               title={event.title}
+              key={index}
               date={event.date}
               location={event.location}
               description={event.description}
